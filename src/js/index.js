@@ -147,6 +147,36 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
+  $('.mainslider__slider').slick({
+	  infinite: true,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  arrows: true,
+	  dots: true,
+	  nextArrow: '.mainslider__arrowright',
+		prevArrow: '.mainslider__arrowleft',
+	});
+  $('.partslider__slider').slick({
+	  infinite: true,
+	  slidesToShow: 3,
+	  slidesToScroll: 1,
+	  arrows: true,
+	  dots: false,
+	  nextArrow: '.partslider__arrowright',
+		prevArrow: '.partslider__arrowleft',
+	});
+  $('.galleryslider__slider').slick({
+	  infinite: true,
+	  slidesToShow: 3,
+	  slidesToScroll: 1,
+	  arrows: true,
+	  dots: false,
+	  nextArrow: '.galleryslider__arrowright',
+		prevArrow: '.galleryslider__arrowleft',
+	});
+
+
+
   jQuery("a.scrollTo").click(function (event) {
     event.preventDefault()
     let elementClick = jQuery(this).attr("href");

@@ -1,0 +1,23 @@
+@import './params.scss';
+.text-lgray {
+  color: $lgray;
+}
+.text-2xl {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+}
+.mb-19 {
+  margin-bottom: 19px;
+}
+.block {
+  display: block;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.mb-2xl {
+  margin-bottom: 126px;
+}

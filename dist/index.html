@@ -20,7 +20,6 @@
 </head>
 
 <body>
-
 <header id="header" class="header bg-gray">
     <div class="header__wrapper  border-b border-gra border-2">
       <div class="container" id='top'>
@@ -71,7 +70,7 @@
         </div><!-- /.header__item -->
       </div><!-- /.header__row -->
   </div>
-  <div class="searchblock">
+  <div class="searchblock onlyMobile">
     <div class="container">
       <div class="searchblock__wrapper bg-gray-500 flex items-center">
         <div class="searchblock__icon"><img src="img/search.svg" alt=""></div>
@@ -82,7 +81,7 @@
     <div class="header__menu onlyDesktop">
       <div class="container">
         <div class="mainmenu">
-          <ul class='flex w-full border-b border-gra border-2'>
+          <ul class='flex w-full '>
             <li class='parent'><a href="">О компании</a></li>
             <li class='parent'>
               <a href="">Ремонт</a>
@@ -109,27 +108,26 @@
   <div class="mobilemenu onlyMobile bg-gray">
       <div class="mainmenu bg-gray border-t border-gray">
         <div class="container">
-        <ul class='mainmenu__list'>
-          <li class='parent'><a href="">О компании</a></li>
-            <li class='parent'>
-              <a href="">Ремонт</a>
-              <ul class="submenu">
-                <li><a href="">MULTIVAC</a></li>
-                <li><a href="">HENKELMAN</a></li>
-                <li><a href="">VAMA</a></li>
-                <li><a href="">APACH</a></li>
-                <li><a href="">EHVC</a></li>
-                <li><a href="">LUXSTAHL</a></li>
-              </ul><!-- /.submenu -->
-            </li>
-            <li class='parent'><a href="">Запчасти</a></li>
-            <li class='parent'><a href="">Прайс-лист</a></li>
-            <li class='parent'><a href="">Услуги</a></li>
-            <li class='parent'><a href="">Галерея</a></li>
-            <li class='parent'><a href="">Контакты</a></li>
-        </ul>
-        </div>
-      </div>  
+          <ul class='mainmenu__list'>
+            <li class='parent'><a href="">О компании</a></li>
+              <li class='parent'>
+                <a href="">Ремонт</a>
+                <ul class="submenu">
+                  <li><a href="">MULTIVAC</a></li>
+                  <li><a href="">HENKELMAN</a></li>
+                  <li><a href="">VAMA</a></li>
+                  <li><a href="">APACH</a></li>
+                  <li><a href="">EHVC</a></li>
+                  <li><a href="">LUXSTAHL</a></li>
+                </ul><!-- /.submenu -->
+              </li>
+              <li class='parent'><a href="">Запчасти</a></li>
+              <li class='parent'><a href="">Прайс-лист</a></li>
+              <li class='parent'><a href="">Услуги</a></li>
+              <li class='parent'><a href="">Галерея</a></li>
+              <li class='parent'><a href="">Контакты</a></li>
+          </ul>
+        </div> 
         <div class="mobilemenu__info onlyMobile  border-t border-gray">
           <div class="container">
           <div class="mobilemenu__socials socials">
@@ -140,7 +138,7 @@
             </div><!-- /.socials__items -->
           </div>
           <div class="mobilemenu__email">
-            <a href="" class="linkemail"></a><!-- /.linkemail -->
+            <a href="mailto:info@remvac.ru" class="linkemail">info@remvac.ru</a>
           </div>
           <div class="mobilemenu__phone">
             <div class="phone flex items-center ">
@@ -149,6 +147,10 @@
                 <img src="img/chevron-down.svg" alt="">
               </span>
             </div><!-- /.phone -->
+            <div class="header__status">
+              <span class="status__icon"><img src="img/status.svg" alt=""></span>
+              <span class="status__text pl-7 text-white text-md">Мы на связи</span>
+            </div><!-- /.header__status -->
           </div><!-- /.mobilemenu__phone -->
           <div class="mobilemenu__callback">
             <div class="callback">
@@ -161,8 +163,230 @@
     </div><!-- /.container -->
   </div><!-- /.mobilemenu -->
 </header><!-- /#header.header -->
-  
+<main>
+  <section>
+    <div class="mainslider">
+      <div class="container">
+				<div class="mainslider__container">
+					<div class="mainslider__slider">
+						<div class="mainslider__slide" style="background-image: url(img/slide1.jpg);">
+							<div class="mainslider__wrapper justify-betweeen">
+								<div class="mainslider__row flex items-center justify-between w-full">
+									<div class="mainslider__content">
+										<div class="mainslider__title">Ремонт вакуумных упаковщиков <span class='color-blue'> Multivac</span></div>
+										<div class="mainslider__link"><a href="" class="button button_large">Подробнее</a></div>
+									</div>
+                  <div class="mainslider__image">
+                    <div class="mainslider__img"><img src="img/image1.png" alt=""></div>
+                  </div><!-- /.mainslider__image -->
+								</div>
+							</div>
+						</div>
+						<div class="mainslider__slide" style="background-image: url(img/slide1.jpg);">
+							<div class="mainslider__wrapper justify-betweeen">
+								<div class="mainslider__row flex items-center justify-between w-full">
+									<div class="mainslider__content">
+										<div class="mainslider__title">Ремонт вакуумных упаковщиков <span class='color-blue'> Multivac</span></div>
+										<div class="mainslider__link"><a href="" class="button button_large">Подробнее</a></div>
+									</div>
+                  <div class="mainslider__image">
+                    <div class="mainslider__img"><img src="img/image1.png" alt=""></div>
+                  </div><!-- /.mainslider__image -->
+								</div>
+							</div>
+						</div>
+            <div class="mainslider__slide" style="background-image: url(img/slide1.jpg);">
+							<div class="mainslider__wrapper justify-betweeen">
+								<div class="mainslider__row flex items-center justify-between w-full">
+									<div class="mainslider__content">
+										<div class="mainslider__title">Ремонт вакуумных упаковщиков <span class='color-blue'> Multivac</span></div>
+										<div class="mainslider__link"><a href="" class="button button_large">Подробнее</a></div>
+									</div>
+                  <div class="mainslider__image">
+                    <div class="mainslider__img"><img src="img/image1.png" alt=""></div>
+                  </div><!-- /.mainslider__image -->
+								</div>
+							</div>
+						</div>
+            <div class="mainslider__slide" style="background-image: url(img/slide1.jpg);">
+							<div class="mainslider__wrapper justify-betweeen">
+								<div class="mainslider__row flex items-center justify-between w-full">
+									<div class="mainslider__content">
+										<div class="mainslider__title">Ремонт вакуумных упаковщиков <span class='color-blue'> Multivac</span></div>
+										<div class="mainslider__link"><a href="" class="button button_large">Подробнее</a></div>
+									</div>
+                  <div class="mainslider__image">
+                    <div class="mainslider__img"><img src="img/image1.png" alt=""></div>
+                  </div><!-- /.mainslider__image -->
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="mainslider__controls">
+							<div class="mainslider__arrows">
+								<div class="mainslider__arrowleft">
+                  <img src="img/slider-left.svg" alt="">
+                </div>
+								<div class="mainslider__arrowright">
+                  <img src="img/slider-right.svg" alt="">
+                </div>
+							</div>							
+					</div>
+					
+          </div>
+        </div><!-- /.container -->
+			</div>
+      </section>
 
+      <section class='mb-2xl'>
+      <div class="partslider">
+        <div class="container">
+          <div class="partslider__wrapper flex justify-between">
+            <div class="partslider__block">
+              <div class="blocktitle text-lgray uppercase text-2xl">
+                Популярные услуги
+              </div>
+              <div class="description">Самые популярные услуги нашей компании</div>
+              <a href="" class="block text-blue uppercase text-lg mb-19">Смотреть все</a>
+              <div class="partslider__arrows flex">
+                <div class="partslider__arrowleft cursor-pointer">
+                  <img src="img/slider-left.svg" alt="">
+                </div>
+                <div class="partslider__arrowright cursor-pointer">
+                  <img src="img/slider-right.svg" alt="">
+                </div>
+              </div><!-- /.partslider__arrows -->
+            </div><!-- /.partslider__block -->
+            <div class="partslider__container">
+              <div class="partslider__slider">
+                <div class="partslider__slide">
+                  <a href="" class="partslider__link">
+                    <div class="partslider__image">
+                      <img src="img/partslider1.jpg" alt="">
+                    </div>
+                    <span class="partslider__title flex items-center justify-between">
+                      <div class="partslider__name ">
+                        Выезд <br> специалиста
+                      </div>
+                      <div class="partslider__icon"><img src="img/chevron-right-small.svg" alt=""></div>
+                    </span>
+                  </a>
+                </div><!-- /.partslider__slide -->
+                <div class="partslider__slide">
+                  <a href="" class="partslider__link">
+                    <div class="partslider__image">
+                      <img src="img/partslider1.jpg" alt="">
+                    </div>
+                    <span class="partslider__title flex items-center justify-between">
+                      <div class="partslider__name ">
+                        Выезд <br> специалиста
+                      </div>
+                      <div class="partslider__icon"><img src="img/chevron-right-small.svg" alt=""></div>
+                    </span>
+                  </a>
+                </div><!-- /.partslider__slide -->
+                <div class="partslider__slide">
+                  <a href="" class="partslider__link">
+                    <div class="partslider__image">
+                      <img src="img/partslider1.jpg" alt="">
+                    </div>
+                    <span class="partslider__title flex items-center justify-between">
+                      <div class="partslider__name ">
+                        Выезд <br> специалиста
+                      </div>
+                      <div class="partslider__icon"><img src="img/chevron-right-small.svg" alt=""></div>
+                    </span>
+                  </a>
+                </div><!-- /.partslider__slide -->
+                <div class="partslider__slide">
+                  <a href="" class="partslider__link">
+                    <div class="partslider__image">
+                      <img src="img/partslider1.jpg" alt="">
+                    </div>
+                    <span class="partslider__title flex items-center justify-between">
+                      <div class="partslider__name ">
+                        Выезд <br> специалиста
+                      </div>
+                      <div class="partslider__icon"><img src="img/chevron-right-small.svg" alt=""></div>
+                    </span>
+                  </a>
+                </div><!-- /.partslider__slide -->
+              </div><!-- /.partslider__slider -->
+            </div><!-- /.partslider__container -->
+          </div><!-- /.partslider__wrapper flex -->
+        </div><!-- /.container -->
+      </div><!-- /.partslider -->
+  </section>
+
+  <section  class='mb-2xl'>
+    <div class="galleryslider">
+      <div class="container">
+        <div class="blockheader">
+          <div class="heading flex items-center justify-between">
+            <div class="flex items-center">
+              <div class="blocktitle text-lgray uppercase text-2xl">
+                Запчасти в наличии
+              </div>
+              <a href="" class="block text-blue uppercase text-lg mb-19">Смотреть все</a>
+            </div>  
+            <div class="galleryslider__arrows flex">
+              <div class="galleryslider__arrowleft cursor-pointer">
+                <img src="img/slider-left.svg" alt="">
+              </div>
+              <div class="galleryslider__arrowright cursor-pointer">
+                <img src="img/slider-right.svg" alt="">
+              </div>
+            </div><!-- /.partslider__arrows -->
+          </div>
+          <div class="description">Все запчасти и комплектующие всегда в наличии на нашем складе</div>
+        </div>
+        <div class="galleryslider__container">
+          <div class="galleryslider__slider">
+            <div class="galleryslider__slide">
+              <a href="img/galleryslider1.jpg" data-lightbox='galleryslider' class="galleryslider__link">
+                <img src="img/galleryslider1.jpg" alt="">
+                <div class="galleryslider__title">Название</div>
+                <div class="galleryslider__hover flex items-center justify-between">
+                  <img src="img/zoomin.svg" alt="">
+                </div>
+              </a>
+            </div>
+            <div class="galleryslider__slide">
+              <a href="img/galleryslider2.jpg" data-lightbox='galleryslider' class="galleryslider__link">
+                <img src="img/galleryslider2.jpg" alt="">
+                <div class="galleryslider__title">Уплотнитель для крышки</div>
+                <div class="galleryslider__hover flex items-center justify-between">
+                  <img src="img/zoomin.svg" alt="">
+                </div>
+              </a>
+            </div>
+            <div class="galleryslider__slide">
+              <a href="img/galleryslider3.jpg" data-lightbox='galleryslider' class="galleryslider__link">
+                <img src="img/galleryslider3.jpg" alt="">
+                <div class="galleryslider__title">Клише</div>
+                <div class="galleryslider__hover flex items-center justify-between">
+                  <img src="img/zoomin.svg" alt="">
+                </div>
+              </a>
+            </div>
+            <div class="galleryslider__slide">
+              <a href="img/galleryslider1.jpg" data-lightbox='galleryslider' class="galleryslider__link">
+                <img src="img/galleryslider1.jpg" alt="">
+                <div class="galleryslider__title">Название</div>
+                <div class="galleryslider__hover flex items-center justify-between">
+                  <img src="img/zoomin.svg" alt="">
+                </div>
+              </a>
+            </div>
+          </div><!-- /.galleryslider__slider -->
+        </div><!-- /.galleryslider__container -->
+      </div><!-- /.container -->
+    </div><!-- /.galleryslider -->
+  </section>
+
+</main>
+ 
 
 <section>
   <footer id="footer" class="footer clearfix">

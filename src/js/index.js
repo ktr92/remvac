@@ -174,6 +174,13 @@ $(document).ready(function () {
 	  nextArrow: '.galleryslider__arrowright',
 		prevArrow: '.galleryslider__arrowleft',
 	});
+  $('.aboutblock__slider').slick({
+	  infinite: true,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  dots: true
+	});
 
 
 

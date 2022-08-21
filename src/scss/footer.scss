@@ -2,16 +2,57 @@
 @import './partials/mixins.scss';
 
 #footer {
-  background-image: url(../img/footer.png);
-  background-size: cover;
-  background-position: center bottom;
-  background-repeat: no-repeat;
+  background: $dgray;
 
+}
+
+.footer {
+  .socials__item a {
+    border-width: 2px;
+  }
+  .linkemail {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .footer__main {
 
-  padding: 315px 0 113px 0;
+  padding: 55px 0
+}
+
+.footer__bottom {
+  padding: 39px 0 57px 0;
+  font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 16px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+
+.footer__links a {
+  font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 16px;
+/* identical to box height */
+padding-bottom: 6px;
+border-bottom: 2px solid #0068D7;
+display: block;
+margin-right: 48px;
+color: #FFFFFF;
+
+&:hover {
+  color: #fff;
+  border-color: transparent;
+}
+}
+
+.footer__logo {
+  margin-right: 31px;
 }
 
 .footer__cols {
@@ -31,21 +72,6 @@
   align-items: center;
 }
 
-.footer__copy {
-  padding-left: 42px;
-  margin-left: 34px;
-  position: relative;
-
-  &:after {
-    content: "";
-    background: rgba(255, 255, 255, 0.3);
-    width: 3px;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-}
 
 .footer__text {
   font-family: 'Circe';

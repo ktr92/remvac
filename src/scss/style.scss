@@ -636,6 +636,16 @@ color: #FFFFFF;
   left: 0;
 }
 
+.blocktitle_white:after {
+  content: "";
+  width: 34px;
+  height: 5px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 .description {
   color: $lgray;
   margin-bottom: 19px;
@@ -822,6 +832,101 @@ color: #304F6F;
    right: 3%;
    top: 30px;
  }
+
+ .fitches {
+}
+.fitches__wrapper {
+}
+.flex {
+}
+.justify-between {
+}
+.fitches__left {
+}
+.fitches__block {
+  background-image: url(../img/remvac.svg);
+  background-position: right 46px center;
+  background-repeat: no-repeat;
+  background-size: initial;
+  padding: 47px 72px 14px 48px;
+  width: 455px;
+  background-color: #212D39;
+  border-radius: 8px;
+  box-shadow: 1px 28px 43px -28px #212d39;
+}
+.fitches__title {
+}
+.fitches__image {
+}
+.blocktitle_white {
+  font-weight: 700;
+font-size: 32px;
+line-height: 32px;
+padding-bottom: 35px;
+margin-bottom: 17px;
+}
+.fitches__right {
+  width: calc(100% - 547px);
+}
+.fitches__items {
+  margin: 0 -30px;
+}
+.fitches__item {
+  padding: 0 30px;
+  margin-bottom: 60px;
+}
+.fitches__item:nth-child(5)  {
+  margin-bottom: 0;
+}
+.fitches__item:nth-child(6)  {
+  margin-bottom: 0;
+}
+.fitchescontent {
+}
+.fitchescontent__img {
+    width: 94px;
+  height: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  border: 1px solid rgba(48, 79, 111, 0.15);
+}
+.fitchescontent__icon {
+  position: relative;
+  span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #212D39;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+.fitchescontent__img {
+}
+.fitchescontent__text {
+  font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 18px;
+text-transform: uppercase;
+padding-left: 24px;
+color: #304F6F;
+
+}
+
 
 @media (max-width: 1023px) {
   .header__row {

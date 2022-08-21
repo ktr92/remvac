@@ -155,6 +155,7 @@ $(document).ready(function () {
 	  dots: true,
 	  nextArrow: '.mainslider__arrowright',
 		prevArrow: '.mainslider__arrowleft',
+    
 	});
   $('.partslider__slider').slick({
 	  infinite: true,
@@ -164,6 +165,25 @@ $(document).ready(function () {
 	  dots: false,
 	  nextArrow: '.partslider__arrowright',
 		prevArrow: '.partslider__arrowleft',
+    responsive: [
+     
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          variableWidth: true
+        }
+      }
+   
+    ]
 	});
   $('.galleryslider__slider').slick({
 	  infinite: true,
@@ -173,6 +193,26 @@ $(document).ready(function () {
 	  dots: false,
 	  nextArrow: '.galleryslider__arrowright',
 		prevArrow: '.galleryslider__arrowleft',
+    responsive: [
+     
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true
+        }
+      }
+   
+    ]
 	});
   $('.aboutblock__slider').slick({
 	  infinite: true,

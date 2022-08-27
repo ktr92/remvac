@@ -221,6 +221,47 @@ $(document).ready(function () {
 	  arrows: false,
 	  dots: true
 	});
+  $('.serts__slider').slick({
+	  infinite: true,
+	  slidesToShow: 4,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  dots: false,
+    draggable: false,
+    responsive: [
+      {
+        breakpoint: 1439,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          draggable: true,
+        }
+      },
+      {
+        breakpoint: 1023,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          draggable: true,
+        }
+      },
+      {
+        breakpoint: 620,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          draggable: true,
+        }
+      }
+    ]
+	});
+
+  $(".sliderRight").click(function (e) {
+    $(this).closest('.slidersection').find(".slick-slider").slick("slickNext");
+  });
+  $(".sliderLeft").click(function (e) {
+    $(this).closest('.slidersection').find(".slick-slider").slick("slickPrev");
+  });
 
 
 

@@ -157,6 +157,13 @@ $(document).ready(function () {
 		prevArrow: '.mainslider__arrowleft',
     
 	});
+  $('.reviewsslider__slider').slick({
+	  infinite: true,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  arrows: false,
+    
+	});
   $('.partslider__slider').slick({
 	  infinite: true,
 	  slidesToShow: 3,
@@ -255,6 +262,68 @@ $(document).ready(function () {
       }
     ]
 	});
+  $('.videoslider__slider').slick({
+	  infinite: true,
+	  slidesToShow: 3,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  dots: false,
+    draggable: false,
+    responsive: [
+ 
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          draggable: true,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          draggable: true,
+        }
+      }
+    ]
+	});
+  $('.photoslider__slider').slick({
+	  infinite: true,
+	  slidesToShow: 4,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  dots: false,
+    draggable: false,
+    responsive: [
+ 
+      {
+        breakpoint: 1439,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          draggable: true,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          draggable: true,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          draggable: true,
+        }
+      }
+    ]
+	});
 
   $(".sliderRight").click(function (e) {
     $(this).closest('.slidersection').find(".slick-slider").slick("slickNext");
@@ -263,7 +332,18 @@ $(document).ready(function () {
     $(this).closest('.slidersection').find(".slick-slider").slick("slickPrev");
   });
 
-
+  
+  $(".youtubepopup").click(function () {
+      var $this = $(this);
+      var $iframe = $('<iframe frameborder="0" allow="autoplay; encrypted-media" class="iframe" id="Overlayvideo" allowfullscreen="true">').attr("src", $this.data("link")).css({"width": 400, "height": 300});
+      var $title = '';
+      $("#video-view").html($title).append($iframe);
+      $("#video-popup").show();
+  });
+  $('#video-close').click(function () {
+      $("#video-view").html('')
+      $("#video-popup").hide()
+  })
 
   jQuery("a.scrollTo").click(function (event) {
     event.preventDefault()
@@ -299,7 +379,7 @@ $(document).ready(function () {
   });
 
 
-  if ($(window).width() < 1024) { 
+  if ($(window).width() < 1021) { 
     $(window).scroll(function () {
       scroll = $(window).scrollTop(); 
 
@@ -309,4 +389,23 @@ $(document).ready(function () {
     });
   }
 
+})
+
+$(document).ready(function() {
+  $('.reviews__rating').each(function () {
+    $(this).find('span.rat-stars-active').css('width', $(this).text() * 21);
+  });
+  $('.ratingform .rating').mousemove(function (e) {
+      var stars = parseInt((e.pageX - $(this).offset().left) / 21) * 21 + 21;
+      $(this).children('span').css('width', stars);
+  });
+  $('.ratingform .rating').mouseout(function (e) {
+      $(this).children('span').css('width', $(this).text() * 21);
+  });
+  $('.ratingform .rating').click(function (e) {
+      var stars = parseInt((e.pageX - $(this).offset().left) / 21) + 1;
+      var $inp = $('.rating input[name="rating"]');
+      $inp.val(stars);
+      $('.rating').html(stars);
+  });
 })

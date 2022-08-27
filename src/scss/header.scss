@@ -47,23 +47,3 @@
     }
   }
 }
-
-.modal-dialog {
-  width: 1224px;
-  max-width: 100%;
-}
-
-button.close {
-  top: 10px;
-  right: 10px;
-  opacity: 1 !important;
-  z-index: 999;
-  position: absolute;
-
-  &:hover {
-    path {
-      transition: all 0.3s ease;
-      opacity: 1;
-    }
-  }
-}

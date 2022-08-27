@@ -1599,6 +1599,7 @@ height: 100% !important;
   -webkit-text-stroke: initial;
   vertical-align: middle;
   /* overflow: hidden; */
+  z-index: 9;
 }
 
 .blograting__value {
@@ -1899,6 +1900,106 @@ img {
   margin: 40px 0;
 }
 
+.contact {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+}
+.contact__icon {
+  
+}
+.contact__icn {
+  width: 42px;
+  height: 42px;
+  border: 2px solid rgba(48, 79, 111, 0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+.contact__title {
+  margin-bottom: 3px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #304F6F;
+  opacity: 0.7;
+}
+.contact__content {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #304F6F;
+  a {
+    color: #0068D7;
+  }
+
+  span {
+    opacity: 0.4;
+    padding-left: 16px;
+    margin-left: 16px;
+    position: relative;
+    border-left: 2px solid rgba(48, 79, 111, 0.2);
+  }
+}
+
+.contact__main {
+  margin-left: 15px;
+}
+
+.contactblock {
+  padding-bottom: 32px;
+  margin-bottom: 23px;
+  border-bottom: 2px solid rgba(48, 79, 111, 0.1);
+}
+
+.socialblock {
+}
+.socialblock__title {
+}
+.socialblock__socials {
+  display: flex;
+  align-items: center;
+  a {
+    display: flex;
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 6px;
+    border: 2px solid #0068D7;
+    border-radius: 50%;
+
+  }
+}
+.socialblock {
+  display: flex;
+  align-items: center;
+}
+.socialblock__title {
+  font-family: 'Circe';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 19px;
+  color: #304F6F;
+  
+  opacity: 0.7;
+}
+
+#ymap {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.contentpage__col60_right {
+  padding-left: 99px;
+}
+
+
 @media (min-width: 1440px) {
   .header__logo img:first-child {
     max-width: 98px;
@@ -1954,6 +2055,12 @@ img {
 }
 
 @media (max-width: 1023px) {
+  .contentpage__col40_left {
+    margin-bottom: 40px;
+  }
+  .contentpage__col60 {
+    padding: 0;
+  }
   table {
     width: initial;
     min-width: 100%;
@@ -2312,6 +2419,17 @@ padding-bottom: 2px;
 }
 
 @media (max-width: 767px) {
+  .contact__content {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .contact__content span {
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin-top: 3px;
+    border: none;
+  }
   .items .item33 {
     width: 100%;
   }

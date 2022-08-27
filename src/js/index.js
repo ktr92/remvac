@@ -356,7 +356,7 @@ $(document).ready(function () {
     return false;
   });
 
-  $('input[type="tel"]').mask('+7 (999) 999-99-99')
+  $('input[type="tel"]').mask('+7 999 999 99 99')
 
 
 
@@ -396,16 +396,28 @@ $(document).ready(function() {
     $(this).find('span.rat-stars-active').css('width', $(this).text() * 21);
   });
   $('.ratingform .rating').mousemove(function (e) {
+    if ($('.rating__formvalue span').text() === '0') {
       var stars = parseInt((e.pageX - $(this).offset().left) / 21) * 21 + 21;
-      $(this).children('span').css('width', stars);
+      $(this).find('span.rat-stars-active').css('width', stars);
+    }
+      
   });
   $('.ratingform .rating').mouseout(function (e) {
-      $(this).children('span').css('width', $(this).text() * 21);
+      $(this).find('span.rat-stars-active').css('width', $(this).text() * 21);
   });
   $('.ratingform .rating').click(function (e) {
       var stars = parseInt((e.pageX - $(this).offset().left) / 21) + 1;
       var $inp = $('.rating input[name="rating"]');
       $inp.val(stars);
-      $('.rating').html(stars);
+      $('.rating input[name="rating"]').val(stars);
+      $(this).find('span.rat-stars-active').css('width', stars * 21);
+  });
+
+  $('.ratingform .rating').click(function (e) {
+    var stars = parseInt((e.pageX - $(this).offset().left) / 24) + 1;
+    var $inp = $('.ratingform input[name="rating"]');
+    $inp.val(stars);
+    $('.blograting__form .blograting__rating span').html(stars);
+    $('.rating__formvalue span').text(stars)
   });
 })
